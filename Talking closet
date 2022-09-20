@@ -7,6 +7,7 @@ def closet():
   x = 1
   while x > 0:
     name = input("Whats my name? ")
+    name = name.lower()
     if name == "langston":
       print("There's my owner")
       x = 0
@@ -14,13 +15,17 @@ def closet():
       print("Your not my owner imposter!")
   rainboots = "rainboots"
   raincoat = "raincoat"
+  rainpaints = "a thin pair of pants"
+  the_day = input("Oh what do you plan to do today? ")
+  print("Have a fun time doing " + the_day + "!")
   day = input("What is the day(MTWTFSS - dont answer with a initial) ")
-  time = input("What is todays date?(xx/xx/xxxx - without the slashes) ")
+  day = day.lower()
+  time = input("What is todays date? MMDDYYYY ")
   birthdate = "05142022"
-  norm_outfit = "a red t-shirt and a pair of blue pants with a    dapper hat"
+  norm_outfit = "a red t-shirt and a pair of blue pants with a    \ndapper hat"
   work_day = False
   raining =  False
-  work_outfit = "a collared blue shirt and blue jeans with a      belt"
+  work_outfit = "a collared blue shirt and blue jeans with a belt"
   weather = input("Whats's the weather like today ")
   valentine_date = "02141818"
   christmas_date = "12252022"
@@ -30,28 +35,30 @@ def closet():
     raining = True
   if "snowing" not in weather:
     work_day = True
-  if day == ("monday" or "tuesday" or "wednesday" or "thursday"     or "friday" or "sunday") and raining:
+  if day != "saturday" and raining:
     print("you'll be wearing " + norm_outfit)
   elif (day == "saturday" and raining and work_day):
+    print("You'll be wearing " + work_outfit + "and " + rainboots + " with a" + raincoat + " and " + rainpaints)
+  elif (day == "saturday" and work_day):
     print("You'll be wearing " + work_outfit)
   elif("snowing" in weather):
-    print("You're not going to work today it's snowing, matter       of fact you don't need clothes you're not going outside!")
-  else:
-    print("You'll be wearing your " + raincoat + " and " + rainboots     + " Have a nice rainy day")
-  if time == birthdate:
+    print("You're not going to work today it's snowing, matter of fact you don't need clothes you're not going outside!")
+  elif "raining" in weather:
+    print("You'll be wearing your " + raincoat + " and " + rainboots     + " Have a nice rainy day") 
+  if birthdate[0:4] in time:
     print("checking for special events")
     print("Happy birthday!")
-  elif time == valentine_date:
+  elif valentine_date[0:4] in time:
     print("checking for special events")
-    print("Happy Frederick Douglass, did you know this day       is Fredrick's birthday, rejoice!)")
+    print("Happy Frederick Douglass, did you know this day       \nis Fredrick's birthday, rejoice!)")
     print("Oh i guess its valentines day too")
-  elif time == christmas_date:
+  elif christmas_date[0:4] in time:
     print("checking for special events")
     print("Its christmas day can you believe it?")
-  elif time == mom_birthdate: 
+  elif mom_birthdate[0:4] in time: 
     print("checking for special events")
     print("Wow its your mom's birthday isn't that nice")
-  elif time == dad_birthdate:
+  elif dad_birthdate[0:4] in time:
     print("checking for special events")
     print("Wow its your dad's birthday isn't that nice")
   else:
@@ -68,6 +75,6 @@ def closet():
 
 
 
-
+ #i got a "identation error so i changed it"
 
 closet()
