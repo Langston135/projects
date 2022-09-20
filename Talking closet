@@ -1,0 +1,73 @@
+import sys
+import random 
+import time 
+
+
+def closet():
+  x = 1
+  while x > 0:
+    name = input("Whats my name? ")
+    if name == "langston":
+      print("There's my owner")
+      x = 0
+    else:
+      print("Your not my owner imposter!")
+  rainboots = "rainboots"
+  raincoat = "raincoat"
+  day = input("What is the day(MTWTFSS - dont answer with a initial) ")
+  time = input("What is todays date?(xx/xx/xxxx - without the slashes) ")
+  birthdate = "05142022"
+  norm_outfit = "a red t-shirt and a pair of blue pants with a    dapper hat"
+  work_day = False
+  raining =  False
+  work_outfit = "a collared blue shirt and blue jeans with a      belt"
+  weather = input("Whats's the weather like today ")
+  valentine_date = "02141818"
+  christmas_date = "12252022"
+  mom_birthdate = "10271976"
+  dad_birthdate = "11131967"
+  if "raining" not in weather:
+    raining = True
+  if "snowing" not in weather:
+    work_day = True
+  if day == ("monday" or "tuesday" or "wednesday" or "thursday"     or "friday" or "sunday") and raining:
+    print("you'll be wearing " + norm_outfit)
+  elif (day == "saturday" and raining and work_day):
+    print("You'll be wearing " + work_outfit)
+  elif("snowing" in weather):
+    print("You're not going to work today it's snowing, matter       of fact you don't need clothes you're not going outside!")
+  else:
+    print("You'll be wearing your " + raincoat + " and " + rainboots     + " Have a nice rainy day")
+  if time == birthdate:
+    print("checking for special events")
+    print("Happy birthday!")
+  elif time == valentine_date:
+    print("checking for special events")
+    print("Happy Frederick Douglass, did you know this day       is Fredrick's birthday, rejoice!)")
+    print("Oh i guess its valentines day too")
+  elif time == christmas_date:
+    print("checking for special events")
+    print("Its christmas day can you believe it?")
+  elif time == mom_birthdate: 
+    print("checking for special events")
+    print("Wow its your mom's birthday isn't that nice")
+  elif time == dad_birthdate:
+    print("checking for special events")
+    print("Wow its your dad's birthday isn't that nice")
+  else:
+    print("checking for special events")
+    print("Guess you got nothing going on!")
+  
+ 
+    
+  
+      
+
+
+
+
+
+
+
+
+closet()
