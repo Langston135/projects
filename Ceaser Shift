@@ -1,0 +1,55 @@
+import time
+import sys
+def slowprint(s):
+  for letter in s :
+    sys.stdout.write(letter)
+    sys.stdout.flush() 
+    time.sleep(.4/10)
+    
+slowprint("Welcome to a Python Ceaser Shift ")
+time.sleep(1)
+x = 0
+def cypherlock():
+  change_word = input("What word would u like to scramble ")
+  shift = int(input("How much would u like to shift by(1-25 for a Ceaser) "))
+  alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+  newword = ""
+  for x in change_word:
+    for y in alphabet:
+      if x == y:
+        i = alphabet.index(y)
+        newword = newword + alphabet[i + shift]
+        break 
+  slowprint("encrypting...")
+  time.sleep(1.5)
+  slowprint("Your Ceaser shifted message is " + newword)
+def cypherunlock():
+  change_word = input("What word would u like to unscramble ")
+  shift = int(input("how much did you shift by? "))
+  alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+  newword = ""
+  for x in change_word:
+    for y in alphabet:
+      if x == y:
+        i = alphabet.index(y)
+        newword = newword + alphabet[i - shift]
+        break
+      elif x  == " ":
+        newword = newword + " "
+        break
+  slowprint("decoding...")      
+  time.sleep(1)
+  slowprint("Your unscrambled word is " + newword)
+while x == 0:
+  time.sleep(1)
+  important_word = input("\n Would u like to encrypt? or decode  \n (say stop to end program) ")
+  if "encrypt" in important_word:
+    cypherlock()
+    
+  if "decode" in important_word:
+    cypherunlock()
+  if "stop" in important_word:
+    break
+   
+        
+        
