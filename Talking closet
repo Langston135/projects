@@ -35,7 +35,7 @@ def closet():
     raining = True
   if "snowing" not in weather:
     work_day = True
-  if day != "saturday" and raining:
+  if day != "saturday" and raining and "snowing" not in weather:
     print("you'll be wearing " + norm_outfit)
   elif (day == "saturday" and raining and work_day):
     print("You'll be wearing " + work_outfit + "and " + rainboots + " with a" + raincoat + " and " + rainpaints)
