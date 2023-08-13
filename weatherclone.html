@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Martins Weather Channel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherstyle.css">
+    <link rel="stylesheet1" href="/Weatherimport/weather-icons-wind.css">
+</head>
+<body>
+    <script src="weatherscript.js"></script>
+    <div class="container">
+        <h1 class="header"> Martin's Weather Forecast 
+        </h1>
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="myfunction()">Search</button>
+        </div>
+        <div class="weather-container">
+            <div id="weatherIcon"> 
+                <img  id = "WeatherIcon" src = "image.png" alt = ""> 
+            </div>
+            <div id="weatherInfo">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
