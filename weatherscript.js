@@ -28,12 +28,57 @@ function display1(data) {
     const temperature = document.getElementById("temperature");
 
     const forecast = data[0].WeatherText;
-
-    if (forecast.includes("Clear")) {
+    const bool = data[0].IsDayTime;
+    // Set the correct weather data according to date
+    if (forecast.includes("Mostly clear") && bool) {
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/fair-day.svg";
+    }
+    else if (forecast.includes("Mostly clear")) {
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/fair-night";
+    }
+    else if (forecast.includes("Mostly cloudy") && bool) {
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/cloudy-day-3.svg";
+    }
+    else if (forecast.includes("Mostly cloudy")){
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/partly-cloudy-night-3.svg"
+    }
+    else if (forecast.includes("Rain") && bool ){
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/rainy-1-day.svg";
+    }
+    else if (forecast.includes("Rain")) {
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/rainy-1-night.svg";
+    }
+    else if (forecast.includes("Snow")){
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/snowy-4.svg";
+    }
+     else if (forecast.includes("Mostly sunny") && bool){
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/fair-day.svg";
+    }
+    else if (forecast.includes("Mostly sunny")){
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "images/fair-night.svg";
+    }
+    else if (forecast.includes("sunny") || forecast.includes("Sunny")) {
         WeatherIcon.style.display = "block";
         WeatherIcon.src = "images/clear-day.svg";
     }
+    else if(forecast.includes("lightning")) {
+       WeatherIcon.style.display = "block";
+       WeatherIcon.src = "images/thunder-day.svg"; 
+    }
+    else {
+        WeatherIcon.style.display = "block";
+        WeatherIcon.src = "/images/clear-night.svg";
+    }
     CityName.textContent = data[0].WeatherText;
-    Weathertext.textContent = data[0].Temperature.Imperial.Value + " F";
+    Weathertext.textContent = data[0].Temperature.Imperial.Value + " F" ;
     
 }
