@@ -11,7 +11,7 @@ Welcome to my Personal Portfolio! This website serves as a showcase of my skills
 - **styles.css:**  Ensures a solid foundation for styling. 
 - **scripts.js:** Dynamically updates and renders the portfolio and fetches data from APIs to highlight my projects effectively.
 - **candleshop/**: A full-stack candle e-commerce project.
-  - **Front-end/:**: Built with React.js and Bootstrap 
+  - **Front-end/:** Built with React.js and Bootstrap 
   - **Back-end/:** Built with Spring for API development, Firebase for Authentication and Inventory, and Stripe for the payment integration.
 ---
 
