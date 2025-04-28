@@ -1,74 +1,72 @@
-Personal Portfolio Website
-Welcome to my Personal Portfolio!
-This website is a showcase of my skills, projects, and professional background. It is designed to provide an engaging, seamless experience for visitors interested in exploring my work.
+# Personal Portfolio Website
 
-📂 Project Structure
-README.md: The file you're currently reading! It provides an overview of the project and instructions for use or further development.
+Welcome to my Personal Portfolio! This website serves as a showcase of my skills, projects, and professional background. It is designed to provide an engaging and seamless experience for visitors who want to learn more about my work.
 
-index.html: The Home page of my portfolio. This file contains the structure and main content of the site.
+---
 
-styles.css:
+## 📂 Project Structure
 
-Vanilla CSS: Provides a strong foundational style.
+- **README.md:** The file you're currently reading! It provides an overview of the project and instructions for use or further development.
+- **index.html:** The Home page of my portfolio. This file contains the structure and content of the site.
+- **styles.css:**  Ensures a solid foundation for styling. 
+- **scripts.js:** Dynamically updates and renders the portfolio and fetches data from APIs to highlight my projects effectively.
+- **candleshop/**: A full-stack candle e-commerce project.
+  - **Front-end/:**: Built with React.js and Bootstrap 
+  - **Back-end/:** Built with Spring for API development, Firebase for Authentication and Inventory, and Stripe for the payment integration.
+---
 
-Tailwind CSS: Enhances the design using utility-first CSS classes.
+## 🌟 Features
 
-scripts.js: Powers dynamic features of the portfolio, such as fetching live data to highlight my projects.
+- **Responsive Design:** Optimized for all devices, ensuring a great user experience on desktops, tablets, and mobile devices.  
+- **Project Showcase:** Displays my top projects with descriptions, images, and links to GitHub repositories or live demos.  
+- **API Integration:** Seamlessly connects to relevant APIs to keep my portfolio updated with live data and functionality.  
+- **Professional Layout:** Combines the power of vanilla CSS and Bootstrap for a clean, modern portfolio, and a user-friendly interface.
+- **Full-Stack Application:** Combines React.js, Bootstrap and Firebase to deliver a streamlined frontend and backend shopping experience
+- **Favorite Items Functionality:** Visitors can save and view their favorite products easily from the homepage.
+- **Inventory System:** Integrated with Firebase to track stock levels in real time. Sold-out items are marked with a "Sold Out" button.
 
-candleshop/:
-A full-stack e-commerce application built to demonstrate my practical web development skills. It contains:
+---
 
-frontend/ — Developed with React and Tailwind CSS for a responsive and modern UI.
+## 🚀 Getting Started
 
-backend/ — Built with Node.js, Express, and MongoDB to handle server-side logic, authentication, and payment integration via Stripe.
-
-🌟 Features
-Responsive Design: Optimized for all devices — desktops, tablets, and mobile phones.
-
-Project Showcase: Highlights my top projects with detailed descriptions, screenshots, and links to GitHub repositories or live demos.
-
-API Integration: Connects to relevant APIs to keep portfolio data dynamic and up to date.
-
-Professional Layout: Combines vanilla CSS and Tailwind CSS to deliver a clean, modern, and user-friendly interface.
-
-Full-stack E-commerce: Demonstrates advanced development with my CandleShop project, featuring payment processing and order management.
-
-🚀 Getting Started
-1. Clone the Repository:
+### 1. Clone the Repository:
 bash
-Copy
-Edit
 git clone https://github.com/Langston135/projects.git
-2. Open in Your Browser:
-Open index.html in your preferred browser to view the portfolio site.
 
-Or visit the live site here: martinscreation.w3spaces.com
 
-3. Explore CandleShop:
-Navigate to the candleshop/ folder to explore the frontend and backend codebases.
+### 2. Open in Your Browser:
+- Open index.html in your preferred browser to view the website.
+or search https://https://martinscreation.w3spaces.com
 
-🛠️ Technologies Used
-HTML5: For web page structure.
+---
 
-CSS3: For styling, using both vanilla CSS and Tailwind CSS.
+## 🛠️ Technologies Used
 
-JavaScript: For interactivity and API communication.
+-Frontend:
 
-React: For building the CandleShop frontend.
+  -HTML5, Bootstrap
 
-Node.js & Express: For backend server and REST APIs.
+  -JavaScript, React
 
-MongoDB: For database management.
+-Backend and Database:
 
-Stripe: For secure payment processing.
+  -Java Springboot (Api Development)
 
-📬 Contact
-If you have any questions, suggestions, or opportunities, feel free to reach out!
+  -Firebase (for real-time inventory and favorites tracking)
 
-Email: ldmart0514@gmail.com
+  -Stripe (for secure payment checkout)
 
-LinkedIn: Langston Martin
+---
 
-🌟 Acknowledgments
-Thank you for visiting my GitHub!
-I hope you enjoy exploring my projects and learning more about my work.
+## 📬 Contact
+
+If you have any questions, suggestions, or opportunities, feel free to reach out!  
+
+- **Email:** [ldmart0514@gmail.com)  
+- **LinkedIn:** [Langston Martin]((https://www.linkedin.com/in/langston-m-540109286/))  
+
+---
+
+## 🌟 Acknowledgments
+
+Thank you for visiting my Github. I hope you enjoy exploring my projects and learning more about me. Feedback and suggestions are always welcome! 
