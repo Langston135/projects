@@ -30,12 +30,12 @@ Welcome to my Personal Portfolio! This website serves as a showcase of my skills
 
 ### 1. Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Langston135/projects.git
 ```
 
 ### 2. Open in Your Browser:
 - Open `index.html` in your preferred browser to view the website.
-or search https://https://ec2-3-135-69-92.us-east-2.compute.amazonaws.com/
+or search https://https://martinscreation.w3spaces.com
 
 ---
 
@@ -51,14 +51,13 @@ or search https://https://ec2-3-135-69-92.us-east-2.compute.amazonaws.com/
 
 If you have any questions, suggestions, or opportunities, feel free to reach out!  
 
-- **Email:** [your.email@example.com](mailto:your.email@example.com)  
-- **GitHub:** [yourusername](https://github.com/yourusername)  
-- **LinkedIn:** [Your Name](https://www.linkedin.com/in/yourname)  
+- **Email:** [ldmart0514@gmail.com)  
+- **LinkedIn:** [Langston Martin]([https://www.linkedin.com/in/yourname](https://www.linkedin.com/in/langston-m-540109286/))  
 
 ---
 
 ## 🌟 Acknowledgments
 
-Thank you for visiting my portfolio. I hope you enjoy exploring my projects and learning more about me. Feedback and suggestions are always welcome!
+Thank you for visiting my Github. I hope you enjoy exploring my projects and learning more about me. Feedback and suggestions are always welcome!
 
 ---
